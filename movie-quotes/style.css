@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+
+strong {
+    color: #bdc7cb;
+}
+
+#poster {
+    width: 40vw;
+    height: 95vh;
+}
+
+.movie-intro {
+    width: 40vw;
+    border-right: 1px white solid;
+    padding-right: 16px;
+    padding-top: 16px;
+    margin-right: 16px;
+}
