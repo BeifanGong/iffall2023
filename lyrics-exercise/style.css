@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(images/background.jpeg);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+em {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+}
+
+#poster {
+    width: 300px;
+    height: 360px;
+    padding-top: 25vh;
+}
+
+.col {
+    padding: 0px 0 24px 24px;
+}
+
+.first-paragraph {
+    margin-top: 48px;
+}
