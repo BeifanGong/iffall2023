@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buttons &mdash; Jeffrey Gong</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/5d984cac6b.js" crossorigin="anonymous"></script>
+
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			main {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+
+
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+				transition: all .2s;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: rgb(46,191,236); /* Old browsers */
+				background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			}
+
+			a#btn_indiegogo {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+				transition: all .2s;
+			}
+
+			a#btn_indiegogo:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #eb1478;
+				transition: all .5s;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+			}
+
+			a#btn_indiegogo:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_indiegogo span {
+				position: relative;
+				z-index: 10;
+			}
+
+            a#btn_cola {
+                display: inline-block;
+                box-sizing: border-box;
+                text-align: center;
+				border-radius: 50%;
+				margin: 60px auto 60px auto;
+				width: 125px;
+                height: 125px;
+                padding-top: 43px;
+				background-color: red;
+                border: 2px solid red;
+				color: #fff;
+				font-size: 28px;
+				font-family: 'Dancing Script', cursive;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+            }
+
+            a#btn_cola:hover {
+                background-color: white;
+                color: red;
+            }
+
+            a#btn_lyft {
+                display: block;
+                font-family: 'Playpen Sans', cursive;
+                color: #FF00BF;
+                text-decoration: none;
+                font-size: 40px;
+                margin-top: 90px;
+                transition: all 0.2s;
+            }
+
+            a#btn_lyft:hover {
+                transform: scale(1.2); 
+            }
+
+            a#btn_apple {
+                display: block;
+                box-sizing: border-box;
+                color: #000;
+                margin: 50px auto 0 auto;
+                width: 125px;
+                height: 125px;
+                padding-top: 10px;
+                transition: all 0.5s;
+                border-radius: 50%;
+            }
+
+            a#btn_apple:hover {
+                background-color: #000;
+                color: white;
+            }
+
+            a#btn_ideo {
+                display: block;
+                font-family: 'Roboto', sans-serif;
+                text-decoration: none;
+                color: black;
+                margin-top: 100px;
+                font-size: 30px;
+                transition: 0.5s;
+            }
+
+            a#btn_ideo:hover {
+                transform: scale(1.2);
+                text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            }
+
+            a#btn_facebook {
+                display: block;
+                color: #4267b2;
+                text-decoration: none;
+                margin-top: 60px;
+                position: relative;
+            }
+
+            a#btn_facebook span {
+                font-size: 20px;
+                font-weight: bold;
+                position: relative;
+                top: -25px;
+                left: 10px;
+                display: none;
+            }
+
+            a#btn_facebook:hover span {
+                display: inline;
+            }
+
+            a#btn_mk {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                font-size: 30px;
+                font-weight: bold;
+                display: block;
+                margin-top: 100px;
+                transition: all 0.5s;
+            }
+
+            a#btn_mk:hover {
+                background-color: #000;
+                color: white;
+            }
+
+            a#btn_tesla {
+                color: #000;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 0.8rem;
+                font-weight: bold;
+                font-size: 30px;
+                font-family: 'Kelly Slab', sans-serif;
+                display: block;
+                margin-top: 100px;
+                transition: all 0.5s;
+            }
+
+            a#btn_tesla:hover {
+                color: #e82127;
+                transform: scale(1.2);
+                text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            }
+
+            a#btn_npr {
+                color: white;
+                text-decoration: none;
+                font-size: 30px;
+                display: block;
+                margin-top: 100px;
+                text-align: center;
+                font-weight: bold;
+                transition: all 0.5s;
+            }
+
+            a#btn_npr span {
+                padding: 12px;
+            }
+
+            span#npr1 {
+                background-color: red;
+            }
+
+            span#npr2 {
+                background-color: #000;
+            }
+
+            span#npr3 {
+                background-color: blue;
+            }
+
+            a#btn_npr:hover {
+                transform: translate(0, -20px);
+            }
+
+            a#btn_moo {
+                display: block;
+                margin: 80px 40px 0 40px;
+                padding: 16px 0 16px 0;
+                color: #0a5c36;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                transition: all 0.5s;
+            }
+
+            a#btn_moo:hover {
+                background-color: #0a5c36;
+                color: white;
+            }
+
+            a#btn_zillow {
+                display: block;
+                margin: 80px 30px 0 30px;
+                padding: 10px 0 10px 0;
+                text-decoration: none;
+                color: #1277e1;
+                font-weight: bold;
+                font-size: 40px;
+            }
+
+            a#btn_zillow:hover {
+                transform: rotate(-30deg);
+                background-color: #1277e1;
+                color: white;
+            }
+
+		</style>
+	</head>
+	<body>
+		
+		<main>
+
+			<h1>Button Styling &mdash; Jeffrey Gong</h1>
+			
+			<div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fa fa-amazon"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo"><span>indiegogo</span></a>
+			</div>
+
+            <div class="button_container">
+                <a href="https://us.coca-cola.com/" target="_blank" id="btn_cola">Coca Cola</a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.lyft.com/" target="_blank" id="btn_lyft">Lyft</a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.apple.com/" target="_blank" id="btn_apple"><i class="fa-brands fa-apple fa-6x"></i></a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.ideo.org/" target="_blank" id="btn_ideo">IDEO•ORG</a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.facebook.com/" target="_blank" id="btn_facebook"><i class="fa-brands fa-facebook fa-6x"></i><span>Facebook</span></a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.michaelkors.com/" target="_blank" id="btn_mk">Michael Kors</a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.tesla.com/" target="_blank" id="btn_tesla">Tesla</a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.npr.org/" target="_blank" id="btn_npr"><span id="npr1">n</span><span id="npr2">p</span><span id="npr3">r</span></a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.moo.com/us/" target="_blank" id="btn_moo"><i class="fa-solid fa-droplet"></i> MOO</a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.zillow.com/" target="_blank" id="btn_zillow">Zillow</a>
+            </div>
+		</main>	
+
+	</body>
+</html>
