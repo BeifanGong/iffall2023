@@ -1,0 +1,314 @@
+html {
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.ft {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.bt {
+    padding: 16px 32px;
+    border-radius: 16px;
+    background-color: #d8b2a1;
+    border: 0px;
+}
+
+.content-container {
+    width: 100%;
+    padding-top: 64px;
+}
+
+.content-container > h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Nav Bar */
+.nav-bar {
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    padding: 16px 32px;
+    background-color: #E2D9CD;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.nav-bar .hightlight {
+    font-weight: bold;
+}
+
+.nav-bar h3:hover {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.spacer {
+    flex: 1;
+}
+
+/* Home Page */
+.home-content {
+    margin: 32px 64px 0 64px;
+    padding: 32px 32px 64px 32px;
+    background-color: #493F32;
+    border-radius: 32px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+.home-content h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.home-content img {
+    width: 90%;
+}
+
+/* Time Bar */
+.time-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    align-items: center;
+    background-color: #E2D9CD;
+    position: relative;
+    transform: translateY(-50%);
+    width: 80%;
+    margin: auto;
+    padding: 16px 0;
+    border-radius: 16px;
+}
+
+.bar-item {
+    border-right: 1px solid #111;
+    text-align: center;
+}
+
+.time-bar > .bar-item:nth-child(5) {
+    border-right: 0;
+}
+
+.bar-item h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.time-bar i {
+    text-align: center;
+    width: 24px;
+    padding: 20px 10px;
+    border-radius: 16px;
+    background-color: #0A0A09;
+    color: white;
+}
+
+/* Early Life */
+.life-point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.life-point img {
+    width: 300px;
+}
+
+.life-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+/* Ideas */
+.idea-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.idea-point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 64px;
+}
+
+.idea-point > div:first-child {
+    padding-right: 64px;
+    border-right: 1px solid #E2D9CD;
+}
+
+.idea-point h2 {
+    text-align: center;
+}
+
+.idea-point > .concept p {
+    font-style: italic;
+}
+
+/* Legacy */
+.legacy-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.legacy-point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 64px;
+}
+
+.legacy-point img {
+    width: 300px;
+}
+
+.legacy-point h2 {
+    text-align: center;
+}
+
+.legacy-point > div:first-child {
+    padding-right: 64px;
+    border-right: 1px solid #E2D9CD;
+}
+
+/* Gallery */
+.gallery-content {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.artpiece {
+    text-align: center;
+}
+
+.artpiece img {
+    width: 160px;
+    height: 200px;
+}
+
+.artpiece p {
+    width: 80%;
+    margin: 16px auto 0 auto;
+}
+
+/* Artwork */
+.artwork-content {
+    margin: 0 64px 0 64px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 64px;
+}
+
+.starting-quote {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.starting-quote h3 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.artwork-point h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.artwork-style {
+    padding-top: 80px;
+    position: sticky;
+    top: 0;
+    height: 80vh;
+    z-index: -1;
+}
+
+.artwork-style h2 {
+    padding-left: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #E2D9CD;
+    padding: 16px 128px 16px 128px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+    align-items: center;
+    margin-top: 32px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer img {
+    height: 72px;
+}
